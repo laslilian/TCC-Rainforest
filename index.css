@@ -118,7 +118,7 @@ section{
 }
 .shadow{
     position: absolute;
-    bottom: 100%;
+    bottom: 99%;
     height: 300px;
     width: 100%;
     left: 0;
@@ -415,6 +415,8 @@ footer .copyright {
         height: 500px;
     }
     .support-content {
+        background: rgba(252, 250, 250, 0);
+        backdrop-filter: blur(0.5rem);
         width: 100%;
         padding-top: 40%;
     }
