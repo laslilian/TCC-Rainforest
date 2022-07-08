@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #175737;
+}
+
+/* barra de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 30;
+    background: #145035;
+}
+nav .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 70px;
+    border-radius: 50px;
+}
+header ul {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header ul li {
+    list-style: none;
+    margin-left: 1rem;
+}
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    transition: 0.3s;
+}
+header ul li a:hover,
+header ul li a.active {
+    background: #ffffff;
+    border-radius: 3rem;
+    color: #145035;
+}
+.burguer {
+    display: none;
+    cursor: pointer;
+}
+.burguer div{
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Main img */
+.big-title{
+    position: absolute;
+    z-index: 17;
+    line-height: 4rem;
+    top: calc(50% - 4rem);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    left: 2rem;
+}
+.big-title {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+.container{
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+header:after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 25;
+}
+.sky {  
+    position: absolute;
+    z-index: 16;
+    height: 110vh;
+}
+.mountain3 { 
+    position: absolute;
+    top: 150px;
+    z-index: 17;
+    height: 110vh;
+}
+
+/* Shadow */
+section{
+    width: 100vw;
+    background-color: #175737;
+    position: relative;
+}
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #175737, transparent);
+}
+
+/* Content */
+section .container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+section .container > * {
+    margin: 2rem;
+}
+.content {
+    color: #fff;
+    transform: translateY(10px);
+}
+.title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+.border {
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+/* Carousel */
+.slider {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.slide img {
+    width: 500px;
+    height: 300px;
+}
+
+/* automatic slider */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio1:checked ~ .navigation-auto .manual-btn1 {
+    background: #ffffff;
+}
+#radio2:checked ~ .navigation-auto .manual-btn2 {
+    background: #ffffff;
+}
+#radio3:checked ~ .navigation-auto .manual-btn3 {
+    background: #ffffff;
+}
+#radio4:checked ~ .navigation-auto .manual-btn4 {
+    background: #ffffff;
+}
+
+/* Support */
+.support1 {
+    width: 101.2%;
+    height: 80vh;
+    background-image: url(./img/caracteristicas-da-arara-de-caninde.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.support-content {
+    background: rgba(252, 250, 250, 0);
+    backdrop-filter: blur(0.5rem);
+    width: 50%;
+    height: 100%;
+    padding: 10% 2% 3% 5%;
+    color: #fff;
+    text-align: center;
+}
+.support1 h1 {
+    color: #175737;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+.support-content > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.support-content .ctn {
+    text-decoration: none;
+    border-radius: 2rem;
+    background: #175737;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+}
+.ctn:hover {
+    background: #fff;
+    color: #175737;
+}
+
+/* Partners */
+.logos {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #145035;
+    align-items: center;
+}
+.partners img {
+    width: 120px;
+}
+.partners p {
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.partners span {
+    color: rgb(70, 139, 91);
+}
+.partners {
+    background-color: #145035;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    background: #fff;
+    width: 101.3%;
+}
+footer .social {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+footer .social a {
+    margin: 1rem;
+    opacity: 0.75;
+}
+footer .social a:hover {
+    opacity: 0.9;
+}
+a img {
+    width: 3rem;
+}
+footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    font-weight: bold;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+footer ul li a:hover {
+    opacity: 1;
+    color: #145035;
+}
+footer .copyright {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #aaa;
+}
+/* Footer end */
+
+/* Responsive */
+
+@media (max-width: 1240px) {
+    .nav-list {
+        width: 60%;
+    }
+}
+@media (max-width: 1000px){
+    section .container{
+        grid-template-columns: 1fr;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        font-size: 4rem;
+        position: absolute;
+        top: 1vh;
+        right: 0;
+        height: 100vh;
+        background: #145035;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .container {
+        padding: 20px 0;
+    }
+    .logo {
+        width: 140px;
+    }
+    .nav-list li {
+        opacity: 0;
+    }
+    .burguer{
+        display: block;
+        padding-left: 340px;
+    }
+    .burguer div {
+        width: 50px;
+        height: 6px;
+        margin: 9px;
+    }
+    .mountain3 {
+        top: 700px;
+        height: 80vh;
+    }
+    .big-title{
+        top: calc(30% - 2rem);
+        font-size: 8rem;
+    }
+    .title {
+        font-size: 60px;
+    }
+    .border {
+        width: 90%;
+    }
+    .content {
+        font-size: 25px;
+    }
+    .slider {
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slides {
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    .slides input {
+        display: none;
+    }
+    .slide {
+        width: 20%;
+        transition: 2s;
+    }
+    .slide img {
+        width: 800px;
+        height: 500px;
+    }
+    .support-content {
+        width: 100%;
+        padding-top: 40%;
+    }
+    .support1 h1 {
+        color: #fff;
+        font-size: 7rem;
+    }
+    .support-content > p {
+        font-size: 5rem;
+    }
+    .support-content .ctn {
+        font-size: 5rem;
+    }
+    .partners img{
+       width: 350px;
+    }
+    .partners p {
+        font-size: 3rem;
+    }
+    a img {
+        width: 120px;
+    }
+    footer ul li a {
+        font-size: 3rem;
+    }
+    footer .copyright {
+        font-size: 2.5rem;
+    }
+}
+
+/* Navbar */
+
+.nav-active {
+    transform: translateX(0%);
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-18px,8px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-13px,-3px);
+}
+@keyframes navListFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
