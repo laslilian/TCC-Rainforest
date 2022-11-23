@@ -380,7 +380,7 @@ footer .copyright {
         height: 80vh;
     }
     .big-title{
-        top: calc(30% - 2rem);
+        top: calc(30% - 5rem);
         font-size: 8rem;
     }
     .title {
