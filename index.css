@@ -390,7 +390,7 @@ footer .copyright {
         width: 90%;
     }
     .content {
-        font-size: 25px;
+        font-size: 30px;
     }
     .slider {
         width: 800px;
@@ -414,15 +414,18 @@ footer .copyright {
         width: 800px;
         height: 500px;
     }
-    .support-content {
-        background: rgba(252, 250, 250, 0);
-        backdrop-filter: blur(0.5rem);
+    .support-content {     
         width: 100%;
         padding-top: 40%;
     }
     .support1 h1 {
         color: #fff;
         font-size: 7rem;
+    }
+    .support-content {
+        background-color: #145035b9;
+        width: 100%;
+        padding-top: 40%;
     }
     .support-content > p {
         font-size: 3rem;

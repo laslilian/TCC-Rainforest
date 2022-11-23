@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #175737;
+}
+
+/* Nav-bar */
+.nav-bar {
+    background-color: #145035;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    /* display: none; */
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    gap: .5rem;
+}
+.nav-links > li {
+    display: flex;
+    align-items: center;
+}
+.nav-links > li > a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 3rem;
+}
+.nav-links > li > a:hover,
+.nav-links > li > a.active {
+    background: #ffffff;
+    color: #145035;
+}
+#logo {
+    width: 20%;
+    min-width: 3rem;
+    max-width: 5rem;
+}
+.container {
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+/* Nav-bar end */
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #175737;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 1rem;
+}
+/* Scroll bar end */
+
+.burguer {
+    display: none;
+    cursor: pointer;
+}
+.burguer div {
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+.divider { 
+    height: 1px;
+    background-color: #093622;
+}
