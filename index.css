@@ -67,7 +67,7 @@ header ul li a.active {
     position: absolute;
     z-index: 17;
     line-height: 4rem;
-    top: calc(50% - 7rem);
+    top: calc(50% - 10rem);
     width: 100%;
     text-align: center;
     font-size: 5rem;
