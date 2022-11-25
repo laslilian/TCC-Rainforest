@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/logo2.png">
+    <title>Rainforest</title>
+    <link rel="stylesheet" href="formulário.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img class="logo" src="img/logo.png">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="apoie.html">Apoie</a></li>
+                    <li><a href="formulário.html" class="active">Contate-nos</a></li>
+                </ul>
+                <div class="burguer">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        </nav>
+        <section>
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+    
+                <input type="hidden" name="accessKey" value="64535363-851f-4edd-a3c3-0360bfd78b33">
+                <input type="hidden" name="redirectTo" value="http://laslilian.github.io/obrigado.html">
+            </form>
+        </section>
+        <script src="main.js"></script>
+    </header>
+</body>
+</html>
